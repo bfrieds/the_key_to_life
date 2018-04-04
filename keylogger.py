@@ -1,4 +1,6 @@
-# how to run: sudo python keylogger.py > file_name.csv
+# Walt: malphite99!, El: giraffe123, Jazz: chocojazz!, Brian: bfrieds01
+# to install pynput: pip install pynput
+# how to run: sudo python keylogger.py > [Your Name]_[Your Password].csv
 # end it with a CTRL-C
 
 from pynput.keyboard import Key, Listener
