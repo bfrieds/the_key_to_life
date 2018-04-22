@@ -4,10 +4,10 @@ import csv
 
 PRESS = "press"
 RELEASE = "release"
-FILENAME = "../../eleanorTYPING.csv"
-RET_FILENAME = "eleanor_keylogs_clean.csv"
+FILENAME = "walt_bfrieds01.csv"
+RET_FILENAME = "walt_bfrieds01_clean.csv"
 out = []
-delta_lim = 2 # in seconds
+delta_lim = 0.5 # in seconds
 
 numbers = { "\'" + str(num) + "\'" for num in range(10) }
 
