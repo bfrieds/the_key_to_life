@@ -7,12 +7,14 @@ from pynput.keyboard import Key, Listener
 import time
 import csv
 
-from classifier import train_classifier, classify
+from classifier import classify
+from sklearn.externals import joblib
 
 PRESS = "press"
 RELEASE = "release"
+classifier_file = "rf_classifier.pkl"
 
-clf = train_classifier()
+clf = joblib.load(classifier_file)
 
 averages = {}
 prev = None
@@ -27,7 +29,6 @@ def on_press(key):
 
 def log(key):
     global prev
-    print("hey")
     if key in numbers:
         pass
     elif prev:
