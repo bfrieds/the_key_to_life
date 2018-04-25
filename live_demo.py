@@ -27,6 +27,7 @@ def on_press(key):
 
 def log(key):
     global prev
+    print("hey")
     if key in numbers:
         pass
     elif prev:
